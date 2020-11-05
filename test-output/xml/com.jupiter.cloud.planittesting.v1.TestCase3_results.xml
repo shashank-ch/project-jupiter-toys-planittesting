@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.907">
+           time="1.259">
   <properties />
   
   
-            <testcase name="testCase03" time="0.907" classname="com.jupiter.cloud.planittesting.v1.TestCase3" />
+            <testcase name="testCase03" time="1.259" classname="com.jupiter.cloud.planittesting.v1.TestCase3" />
       
 </testsuite>

@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="4.770">
+           time="2.337">
   <properties />
-            <testcase name="testCase02" time="4.770" classname="com.jupiter.cloud.planittesting.v1.TestCase2">
+            <testcase name="testCase02" time="2.337" classname="com.jupiter.cloud.planittesting.v1.TestCase2">
                 <failure type="java.lang.AssertionError"
                   message="expected [true] but found [false]"
               >
@@ -15,7 +15,7 @@
   org.testng.Assert.failNotEquals(Assert.java:776)
   org.testng.Assert.assertTrue(Assert.java:44)
   org.testng.Assert.assertTrue(Assert.java:54)
-  com.jupiter.cloud.planittesting.v1.TestCase2.testCase02(TestCase2.java:52)
+  com.jupiter.cloud.planittesting.v1.TestCase2.testCase02(TestCase2.java:53)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

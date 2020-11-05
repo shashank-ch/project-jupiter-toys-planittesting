@@ -12,13 +12,15 @@
 <body>
 <h1>TestCase1</h1>
 <p>
-  Test duration: 7.934s
+  Test duration: 27.592s
 </p>
 
 
 
+
+
   <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
         <td colspan="3" class="group">com.jupiter.cloud.planittesting.v1.TestCase1</td>
       </tr>
@@ -28,58 +30,48 @@
                   testCase01
       </td>
   <td class="duration">
-    0.006s
+    17.927s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         <br>
+                                1. From the home page go to contact page - Successful
+                                <br>
+                                2. Click submit button - Successful
+                                <br>
+                                3. Validate errors
+                                <br>
+                                ForeName Error is Displayed
+                                <br>
+                                Email Error is Displayed
+                                <br>
+                                Message Error is Displayed
+                                <br>
                                 Click to see Screenshot
-                                <a target="_blank" href=Thu_Nov_05_15_08_46_AEDT_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Thu_Nov_05_17_36_44_AEDT_2020.jpg>Screenshot</a>
                                 <br>
+                                4. Populate mandatory fields - Successful
                                 <br>
-                                <a target="_blank" href=Thu_Nov_05_15_08_46_AEDT_2020.jpg><img src=Thu_Nov_05_15_08_46_AEDT_2020.jpg height=200 width=200></img></a>
+                                5. Validate errors are gone
+                                <br>
+                                ForeName Error is not Displayed
+                                <br>
+                                Email Error is not Displayed
+                                <br>
+                                Message Error is not Displayed
+                                <br>
+                                Click to see Screenshot
+                                <a target="_blank" href=Thu_Nov_05_17_37_00_AEDT_2020.jpg>Screenshot</a>
+                                <br>
+                                testCase01 Ended Successfully
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:339)<br />
-              org.openqa.selenium.By.xpath(By.java:92)<br />
-              com.jupiter.cloud.planittesting.v1.TestBase.click(TestBase.java:78)<br />
-              com.jupiter.cloud.planittesting.v1.TestCase1.testCase01(TestCase1.java:24)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
       </td>
 </tr>
       </table>
-
-
   
 </body>
 </html>

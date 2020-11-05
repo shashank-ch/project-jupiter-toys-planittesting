@@ -6,21 +6,14 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="com.jupiter.listeners.CustomListeners"/>
   </listeners>
-  <test thread-count="5" name="TestCase1(failed)">
-    <classes>
-      <class name="com.jupiter.cloud.planittesting.v1.TestCase1">
-        <methods>
-          <include name="initialSetup"/>
-          <include name="testCase01"/>
-        </methods>
-      </class> <!-- com.jupiter.cloud.planittesting.v1.TestCase1 -->
-    </classes>
-  </test> <!-- TestCase1(failed) -->
   <test thread-count="5" name="TestCase2(failed)">
     <classes>
       <class name="com.jupiter.cloud.planittesting.v1.TestCase2">
         <methods>
+          <include name="tearDown"/>
           <include name="initialSetup"/>
+          <include name="closeBrowser"/>
+          <include name="loadObjectRepository"/>
           <include name="testCase02"/>
         </methods>
       </class> <!-- com.jupiter.cloud.planittesting.v1.TestCase2 -->

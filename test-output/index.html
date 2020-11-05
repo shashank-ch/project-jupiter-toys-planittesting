@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,11 +100,6 @@
                       <a href="#" panel-name="suite-Jupiter_Toys" class="show-methods failed suite-Jupiter_Toys"> (show)</a> <!-- show-methods failed suite-Jupiter_Toys -->
                     </span>
                     <div class="method-list-content failed suite-Jupiter_Toys">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Jupiter_Toys" title="com.jupiter.cloud.planittesting.v1.TestCase1" hash-for-method="testCase01">testCase01</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Jupiter_Toys" title="com.jupiter.cloud.planittesting.v1.TestCase2" hash-for-method="testCase02">testCase02</a> <!-- method navigator-link -->
@@ -119,6 +114,11 @@
                       <a href="#" panel-name="suite-Jupiter_Toys" class="show-methods passed suite-Jupiter_Toys"> (show)</a> <!-- show-methods passed suite-Jupiter_Toys -->
                     </span>
                     <div class="method-list-content passed suite-Jupiter_Toys">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Jupiter_Toys" title="com.jupiter.cloud.planittesting.v1.TestCase1" hash-for-method="testCase01">testCase01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Jupiter_Toys" title="com.jupiter.cloud.planittesting.v1.TestCase3" hash-for-method="testCase03">testCase03</a> <!-- method navigator-link -->
@@ -153,35 +153,28 @@
                   </a> <!-- testCase02 -->
                   <span class="method-name">testCase02</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.jupiter.cloud.planittesting.v1.TestCase2.testCase02(TestCase2.java:52)
+	at com.jupiter.cloud.planittesting.v1.TestCase2.testCase02(TestCase2.java:53)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Jupiter_Toys-class-failed -->
-          <div class="suite-Jupiter_Toys-class-failed">
+          <div class="suite-Jupiter_Toys-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.jupiter.cloud.planittesting.v1.TestCase1</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.jupiter.cloud.planittesting.v1.TestCase3</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCase01">
-                  </a> <!-- testCase01 -->
-                  <span class="method-name">testCase01</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:339)
-	at org.openqa.selenium.By.xpath(By.java:92)
-	at com.jupiter.cloud.planittesting.v1.TestBase.click(TestBase.java:78)
-	at com.jupiter.cloud.planittesting.v1.TestCase1.testCase01(TestCase1.java:24)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
+                  <a name="testCase03">
+                  </a> <!-- testCase03 -->
+                  <span class="method-name">testCase03</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Jupiter_Toys-class-failed -->
+          </div> <!-- suite-Jupiter_Toys-class-passed -->
           <div class="suite-Jupiter_Toys-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -200,14 +193,14 @@
           <div class="suite-Jupiter_Toys-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.jupiter.cloud.planittesting.v1.TestCase3</span>
+              <span class="class-name">com.jupiter.cloud.planittesting.v1.TestCase1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCase03">
-                  </a> <!-- testCase03 -->
-                  <span class="method-name">testCase03</span>
+                  <a name="testCase01">
+                  </a> <!-- testCase01 -->
+                  <span class="method-name">testCase01</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -295,26 +288,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCase02')
-data.setCell(0, 2, 'com.jupiter.cloud.planittesting.v1.TestCase2')
-data.setCell(0, 3, 4770);
+data.setCell(0, 1, 'testCase01')
+data.setCell(0, 2, 'com.jupiter.cloud.planittesting.v1.TestCase1')
+data.setCell(0, 3, 17927);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testCase04')
-data.setCell(1, 2, 'com.jupiter.cloud.planittesting.v1.TestCase4')
-data.setCell(1, 3, 1127);
+data.setCell(1, 1, 'testCase02')
+data.setCell(1, 2, 'com.jupiter.cloud.planittesting.v1.TestCase2')
+data.setCell(1, 3, 2337);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testCase03')
-data.setCell(2, 2, 'com.jupiter.cloud.planittesting.v1.TestCase3')
-data.setCell(2, 3, 907);
+data.setCell(2, 1, 'testCase04')
+data.setCell(2, 2, 'com.jupiter.cloud.planittesting.v1.TestCase4')
+data.setCell(2, 3, 1572);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testCase01')
-data.setCell(3, 2, 'com.jupiter.cloud.planittesting.v1.TestCase1')
-data.setCell(3, 3, 6);
+data.setCell(3, 1, 'testCase03')
+data.setCell(3, 2, 'com.jupiter.cloud.planittesting.v1.TestCase3')
+data.setCell(3, 3, 1259);
 window.suiteTableData['Jupiter_Toys']= { tableData: data, tableDiv: 'times-div-Jupiter_Toys'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Jupiter_Toys">
               </div> <!-- times-div-Jupiter_Toys -->
             </div> <!-- times-div -->
@@ -329,11 +322,35 @@ return data;
               <span class="reporter-method-name">testCase01</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">1. From the home page go to contact page - Successful</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">2. Click submit button - Successful</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">3. Validate errors</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">ForeName Error is Displayed</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Email Error is Displayed</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Message Error is Displayed</span>
+                <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output">Click to see Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=Thu_Nov_05_15_08_46_AEDT_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Thu_Nov_05_17_36_44_AEDT_2020.jpg>Screenshot</a></span>
                 <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">4. Populate mandatory fields - Successful</span>
                 <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><a target="_blank" href=Thu_Nov_05_15_08_46_AEDT_2020.jpg><img src=Thu_Nov_05_15_08_46_AEDT_2020.jpg height=200 width=200></img></a></span>
+                <span class="reporter-method-output">5. Validate errors are gone</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">ForeName Error is not Displayed</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Email Error is not Displayed</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Message Error is not Displayed</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Click to see Screenshot</span>
+                <span class="reporter-method-output"><a target="_blank" href=Thu_Nov_05_17_37_00_AEDT_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">testCase01 Ended Successfully</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -351,13 +368,15 @@ return data;
                 <span class="reporter-method-output">Success Message is Displayed</span>
                 <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output">Click to see Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=Thu_Nov_05_15_08_58_AEDT_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Thu_Nov_05_17_37_10_AEDT_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Assert False to show a failed test validation</span>
                 <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output">Click to see Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=Thu_Nov_05_15_08_59_AEDT_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Thu_Nov_05_17_37_10_AEDT_2020.jpg>Screenshot</a></span>
                 <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><a target="_blank" href=Thu_Nov_05_15_08_59_AEDT_2020.jpg><img src=Thu_Nov_05_15_08_59_AEDT_2020.jpg height=200 width=200></img></a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Thu_Nov_05_17_37_10_AEDT_2020.jpg><img src=Thu_Nov_05_17_37_10_AEDT_2020.jpg height=200 width=200></img></a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -374,7 +393,7 @@ return data;
                 <span class="reporter-method-output">Email Error - Alert is Displayed</span>
                 <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output">Click to see Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=Thu_Nov_05_15_09_07_AEDT_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Thu_Nov_05_17_37_19_AEDT_2020.jpg>Screenshot</a></span>
                 <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output">testCase03 Ended Successfully</span>
               </div> <!-- reporter-method-output-div -->
@@ -383,7 +402,7 @@ return data;
               <span class="reporter-method-name">testCase04</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output">1.	From the home page go to shop page - Successful</span>
+                <span class="reporter-method-output">1. From the home page go to shop page - Successful</span>
                 <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output">2. Click buy button 2 times on Funny Cow - Successful</span>
                 <span class="reporter-method-output"><br></span>
@@ -398,7 +417,7 @@ return data;
                 <span class="reporter-method-output">Fluffy Bunny is displayed</span>
                 <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output">Click to see Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=Thu_Nov_05_15_09_15_AEDT_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Thu_Nov_05_17_37_29_AEDT_2020.jpg>Screenshot</a></span>
                 <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output">testCase04 Ended Successfully</span>
               </div> <!-- reporter-method-output-div -->
@@ -418,52 +437,77 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">com.jupiter.cloud.planittesting.v1.TestCase4</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">loadObjectRepository</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.jupiter.cloud.planittesting.v1.TestCase1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialSetup</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">19 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testCase01</span>
-                <span class="method-start">7940 ms</span>
+                <span class="method-start">9604 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">27538 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.jupiter.cloud.planittesting.v1.TestCase2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialSetup</span>
-                <span class="method-start">8468 ms</span>
+                <span class="method-start">27677 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testCase02</span>
-                <span class="method-start">16180 ms</span>
+                <span class="method-start">35102 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">37810 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.jupiter.cloud.planittesting.v1.TestCase3</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialSetup</span>
-                <span class="method-start">21286 ms</span>
+                <span class="method-start">37922 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCase03</span>
-                <span class="method-start">28628 ms</span>
+                <span class="method-start">45495 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">46755 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.jupiter.cloud.planittesting.v1.TestCase4</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialSetup</span>
-                <span class="method-start">29543 ms</span>
+                <span class="method-start">46848 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCase04</span>
-                <span class="method-start">36877 ms</span>
+                <span class="method-start">54377 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">55951 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">56057 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
