@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Jupiter Toys</th></tr>
+<tr><td><a href="#t0">TestCase1</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,457</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestCase2</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">12,814</td><td></td><td></td></tr>
+<tr><td><a href="#t2">TestCase3</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">8,250</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">TestCase4</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">8,463</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num attn">2</th><th class="num">37,984</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Jupiter Toys</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestCase1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.jupiter.cloud.planittesting.v1.TestCase1</td><td><a href="#m0">testCase01</a></td><td rowspan="1">1604549325938</td><td rowspan="1">6</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestCase2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.jupiter.cloud.planittesting.v1.TestCase2</td><td><a href="#m1">testCase02</a></td><td rowspan="1">1604549334178</td><td rowspan="1">4770</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">TestCase3 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.jupiter.cloud.planittesting.v1.TestCase3</td><td><a href="#m2">testCase03</a></td><td rowspan="1">1604549346626</td><td rowspan="1">907</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">TestCase4 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.jupiter.cloud.planittesting.v1.TestCase4</td><td><a href="#m3">testCase04</a></td><td rowspan="1">1604549354875</td><td rowspan="1">1127</td></tr></tbody>
+</table>
+<h2>TestCase1</h2><h3 id="m0">com.jupiter.cloud.planittesting.v1.TestCase1#testCase01</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><br><br/>Click to see Screenshot<br/><a target="_blank" href=Thu_Nov_05_15_08_46_AEDT_2020.jpg>Screenshot</a><br/><br><br/><br><br/><a target="_blank" href=Thu_Nov_05_15_08_46_AEDT_2020.jpg><img src=Thu_Nov_05_15_08_46_AEDT_2020.jpg height=200 width=200></img></a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
+	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:339)
+	at org.openqa.selenium.By.xpath(By.java:92)
+	at com.jupiter.cloud.planittesting.v1.TestBase.click(TestBase.java:78)
+	at com.jupiter.cloud.planittesting.v1.TestCase1.testCase01(TestCase1.java:24)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestCase2</h2><h3 id="m1">com.jupiter.cloud.planittesting.v1.TestCase2#testCase02</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><br><br/>1. From the home page go to contact page - Successful<br/><br><br/>2. Populate mandatory fields - Successful<br/><br><br/>3. Click submit button - Successful<br/><br><br/>4. Validate successful submission message<br/><br><br/>Success Message is Displayed<br/><br><br/>Click to see Screenshot<br/><a target="_blank" href=Thu_Nov_05_15_08_58_AEDT_2020.jpg>Screenshot</a><br/><br><br/>Click to see Screenshot<br/><a target="_blank" href=Thu_Nov_05_15_08_59_AEDT_2020.jpg>Screenshot</a><br/><br><br/><br><br/><a target="_blank" href=Thu_Nov_05_15_08_59_AEDT_2020.jpg><img src=Thu_Nov_05_15_08_59_AEDT_2020.jpg height=200 width=200></img></a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.jupiter.cloud.planittesting.v1.TestCase2.testCase02(TestCase2.java:52)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestCase3</h2><h3 id="m2">com.jupiter.cloud.planittesting.v1.TestCase3#testCase03</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">1. From the home page go to contact page - Successful<br/><br><br/>2. Populated mandatory fields with invalid data<br/><br><br/>3. Validate errors<br/><br><br/>Error Notification - Header is Displayed<br/><br><br/>Email Error - Alert is Displayed<br/><br><br/>Click to see Screenshot<br/><a target="_blank" href=Thu_Nov_05_15_09_07_AEDT_2020.jpg>Screenshot</a><br/><br><br/>testCase03 Ended Successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestCase4</h2><h3 id="m3">com.jupiter.cloud.planittesting.v1.TestCase4#testCase04</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><br><br/>1.	From the home page go to shop page - Successful<br/><br><br/>2. Click buy button 2 times on Funny Cow - Successful<br/><br><br/>3. Click buy button 1 time on Fluffy Bunny - Successful<br/><br><br/>4. Click the cart menu - Successful<br/><br><br/>5. Verifing the items in the cart<br/><br><br/>Funny Cow is displayed<br/><br><br/>Fluffy Bunny is displayed<br/><br><br/>Click to see Screenshot<br/><a target="_blank" href=Thu_Nov_05_15_09_15_AEDT_2020.jpg>Screenshot</a><br/><br><br/>testCase04 Ended Successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

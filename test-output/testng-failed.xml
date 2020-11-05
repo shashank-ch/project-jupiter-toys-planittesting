@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Jupiter Toys]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.jupiter.listeners.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" name="TestCase1(failed)">
+    <classes>
+      <class name="com.jupiter.cloud.planittesting.v1.TestCase1">
+        <methods>
+          <include name="initialSetup"/>
+          <include name="testCase01"/>
+        </methods>
+      </class> <!-- com.jupiter.cloud.planittesting.v1.TestCase1 -->
+    </classes>
+  </test> <!-- TestCase1(failed) -->
+  <test thread-count="5" name="TestCase2(failed)">
+    <classes>
+      <class name="com.jupiter.cloud.planittesting.v1.TestCase2">
+        <methods>
+          <include name="initialSetup"/>
+          <include name="testCase02"/>
+        </methods>
+      </class> <!-- com.jupiter.cloud.planittesting.v1.TestCase2 -->
+    </classes>
+  </test> <!-- TestCase2(failed) -->
+</suite> <!-- Failed suite [Jupiter Toys] -->

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestCase1"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="16.451">
+  <properties />
+  
+  
+            <testcase name="testCase01" time="16.451" classname="com.jupiter.cloud.planittesting.v1.TestCase1" />
+      
+</testsuite>
